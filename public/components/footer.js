@@ -30,7 +30,7 @@ class Footer extends HTMLElement {
                 </p>
               </form>
 
-              <p>Email us <a class="black-text" href="mailto:info@ortalex.com">info@ortalex.com</a>
+              <p>Email us <a class="black-text" href="mailto:pcharny@ortalex.com">pcharny@ortalex.com</a>
             </div>
           </div>
         </footer>
