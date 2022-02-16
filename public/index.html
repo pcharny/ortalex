@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Ortalex</title>
+  <meta name="description" content="Ortalex" />
+  <meta name="author" content="Ortalex" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta property="og:title" content="Ortalex" />
+  <meta property="og:description" content="Ortalex" />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_US" />
+  <meta property="og:url" content="https://ortalex.com/" />
+  <!-- !TODO REPLACE meta IMAGE (important for social media sharing) -->
+  <!-- <meta
+      property="og:image"
+      content="https://res.cloudinary.com/abouhanna/image/upload/v1627859612/abouhanna.com/abouhanna_meta_nb2cps.png"
+    /> -->
+
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="icon" type="image/png" href="/favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="icon.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="stylesheet" href="css/main.css" />
+
+  <meta name="theme-color" content="#ededed" />
+
+  <!-- components -->
+  <script src="components/footer.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+  <main>
+    <div id="navbar">
+      <div class="navbar__container">
+        <span>Ortalex</span>
+      </div>
+    </div>
+    <section style="    height: 100vh;
+    display: flex;" class="wrapper padding__inner hero">
+      <div class="ortalex__container d-flex">
+        <div class="ortalex__name__container">
+          <h1 class="ortalex__name">Ortalex</h1>
+          <h1 class="ortalex__slogan">Coming Soon</h1>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="parallax-placeholder"></div>
+  <div class="footer-container">
+    <footer-component></footer-component>
+  </div>
+  <!-- Scripts -->
+  <script type="module" src="js/main.js"></script>
+  <script>
+    const navbar = document.getElementById("navbar");
+    window.onscroll = function () {
+      if (document.body.scrollTop > 25 || document.documentElement.scrollTop > 25) {
+        navbar.style.top = "0";
+      } else {
+        navbar.style.top = "-70px";
+      }
+    };
+  </script>
+
+</body>
+
+</html>
