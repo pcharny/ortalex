@@ -235,11 +235,6 @@ h1 {
   flex-direction: column;
 }
 
-.ortalex__logo {
-  width: 8em;
-  height: 10.4em;
-}
-
 .ortalex__name__container {
   padding: 2.5em;
 }
@@ -290,21 +285,6 @@ h1 {
 
 .padding__inner.hero {
   padding-top: 1.75em;
-}
-
-.contact__social {
-  display: flex;
-}
-
-.contact__social a {
-  width: 2rem;
-  margin-right: 1.6rem;
-  font-size: 0;
-}
-
-:is(.contact__social svg:hover, .contact__social svg:hover path) {
-  fill: var(--accent);
-  transition: fill 0.2s ease-out;
 }
 
 .accent__bg {
@@ -441,14 +421,6 @@ form label span {
 
   .wrapper {
     margin: 0 auto;
-  }
-
-  main section.services {
-    padding-top: 5em;
-  }
-
-  dialog {
-    max-width: calc((100% - 50vw) - 2em);
   }
 
   .grid-container {
