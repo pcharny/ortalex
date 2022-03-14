@@ -204,6 +204,11 @@ h1 {
   cursor: pointer;
 }
 
+.accent__bg {
+  background-color: var(--accent-bg);
+}
+
+/* custom classes */
 main {
   background-color: var(--background-color);
   min-height: 100vh;
@@ -225,8 +230,8 @@ main {
   color: var(--orange-primary-color);
 }
 
-.accent__bg {
-  background-color: var(--accent-bg);
+.ortalex__team__member__image {
+  width: 10em;
 }
 
 .trail {
