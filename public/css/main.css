@@ -1,8 +1,8 @@
 :root {
-  --background-color: hsl(0, 0%, 0%);
-  --text-color: hsl(150, 1%, 65%);
-  --black-color: hsl(0deg 0% 0%);
-  --accent: hsl(222, 96%, 19%);
+  --background-color: hsl(150, 1%, 95%);
+  --text-color: hsl(25, 2%, 13%);
+  --black-color: hsl(0, 0%, 0%);
+  --accent: hsl(25, 82%, 53%);
   --accent-bg: hsl(0, 0%, 100%);
   --yellow-color: hsl(45, 98%, 52%);
   --orange-primary-color: hsl(22, 84%, 56%);
@@ -22,6 +22,7 @@
 html {
   --thumbBG: hsl(0, 0%, 75%);
   scroll-behavior: smooth;
+  font-size: calc(18px + 0.25vw);
 }
 
 body:not(.ortalex__logo) {
@@ -29,6 +30,7 @@ body:not(.ortalex__logo) {
   font: var(--font);
   font-display: swap;
   font-feature-settings: "case", "calt", "tnum", "ss01", "zero";
+  font-size: 1rem;
   text-rendering: optimizeLegibility;
   background-color: var(--background-color);
   color: var(--text-color);
@@ -172,6 +174,15 @@ h1 {
   display: inline-block !important;
 }
 
+/* justify content */
+.jc-sb {
+  justify-content: space-between !important;
+}
+
+.jc-sa {
+  justify-content: space-around !important;
+}
+
 /* text modifiers */
 
 .text-align-center {
@@ -228,7 +239,7 @@ h1 {
 
 .ortalex__header nav a {
   text-decoration: none;
-  color: var(--accent-bg);
+  color: var(--black-color);
 }
 
 main {
@@ -296,7 +307,7 @@ main {
 }
 
 .wrapper {
-  max-width: 80rem;
+  max-width: 100rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: calc(1rem + (8 - 1) * ((100vw - 20rem)/ (100 - 20)));
