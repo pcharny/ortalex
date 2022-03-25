@@ -271,7 +271,7 @@ main {
 
 .ortalex__team__container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: inherit;
   grid-template-rows: 1fr;
   grid-gap: 1.25em;
 }
@@ -327,6 +327,10 @@ main {
 
   .ortalex__container {
     flex-direction: row;
+  }
+
+  .ortalex__team__container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 
 }
