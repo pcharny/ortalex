@@ -220,6 +220,18 @@ h1 {
 }
 
 /* custom classes */
+.hidden__text {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+}
+
 .ortalex__header {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
