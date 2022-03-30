@@ -299,7 +299,7 @@ main {
   display: grid;
   grid-template-columns: inherit;
   grid-template-rows: 1fr;
-  grid-gap: 1.25em;
+  grid-gap: 2em;
 }
 
 .ortalex__team__member__image {
@@ -350,7 +350,7 @@ main {
 }
 
 .wrapper {
-  max-width: 100rem;
+  max-width: 75rem;
   margin-left: auto;
   margin-right: auto;
   padding-left: calc(1rem + (8 - 1) * ((100vw - 20rem)/ (100 - 20)));
