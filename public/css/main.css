@@ -4,7 +4,9 @@
   --black-color: hsl(0, 0%, 0%);
   --accent: hsl(25, 82%, 53%);
   --accent-bg: hsl(0, 0%, 100%);
+  --white-color: hsl(0, 0%, 100%);
   --yellow-color: hsl(45, 98%, 52%);
+  --dark-blue-color: hsl(222, 96%, 19%);
   --orange-primary-color: hsl(22, 84%, 56%);
   --orange-secondary-color: hsl(18, 89%, 59%);
   --focus: hsl(216, 94%, 58%);
@@ -153,6 +155,10 @@ h1 {
   margin: 0;
 }
 
+p {
+  margin: 0;
+}
+
 /* utility classes
      ========================================================================== */
 
@@ -221,15 +227,15 @@ h1 {
 
 /* custom classes */
 .hidden__text {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: auto;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
 }
 
 .ortalex__header {
@@ -268,7 +274,10 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding-bottom: 1.25em;
+}
+
+.ortalex__about__container {
+  padding: 2em 0;
 }
 
 .ortalex__about__container ul li {
@@ -281,7 +290,12 @@ main {
   color: var(--orange-primary-color);
 }
 
+.ortalex__about__container > p {
+  text-align: justify;
+}
+
 .ortalex__team__container {
+  padding: 2em 0;
   display: grid;
   grid-template-columns: inherit;
   grid-template-rows: 1fr;
@@ -289,14 +303,15 @@ main {
 }
 
 .ortalex__team__member__image {
-  filter: grayscale(100%);
   height: 20em;
   overflow: hidden;
   padding-top: 100%;
   width: 100%;
+  position: relative;
 }
 
 .ortalex__team__member__image__src {
+  filter: grayscale(100%);
   bottom: 0;
   left: 0;
   object-fit: cover;
@@ -315,11 +330,11 @@ main {
   bottom: 0;
   left: 0;
   z-index: 2;
-  color: white;
-  background-color: black;
+  color: var(--dark-blue-color);
+  background-color: var(--white-color);
 }
 
-.ortalex__team__member__data > * {
+.ortalex__team__member__data>* {
   margin: 0;
 }
 
