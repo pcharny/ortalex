@@ -189,6 +189,11 @@ p {
   justify-content: space-around !important;
 }
 
+/* flex modifiers */
+.fd-column {
+  flex-direction: column !important;
+}
+
 /* text modifiers */
 
 .text-align-center {
@@ -324,7 +329,9 @@ main {
 }
 
 .ortalex__team__member__data {
-  padding: 15px 70px 15px 15px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75em;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -334,19 +341,13 @@ main {
   background-color: var(--white-color);
 }
 
-.ortalex__team__member__data>* {
+.ortalex__team__member__data * {
   margin: 0;
 }
 
-.trail {
-  position: absolute;
-  width: 3.75em;
-  height: 3.75em;
-  margin-top: -30px;
-  margin-left: -30px;
-  background-size: cover;
-  background: url(../images/emoji-trail.png) no-repeat;
-  pointer-events: none;
+.linkedin__icon {
+  width: 1rem;
+  font-size: 0;
 }
 
 .wrapper {
