@@ -235,6 +235,16 @@ h1 {
   padding-top: 1.75em;
 }
 
+.ortalex__team__member__image {
+  height: 20em;
+  overflow: hidden;
+  padding-top: 100%;
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  box-shadow: 0px 0px 4px 0px rgb(112 112 112 / 62%);
+}
+
 .accent__bg {
   background-color: var(--accent-bg);
 }
